@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="ss-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="50%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <filter id="ss-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="#0A1424" stroke="rgba(0, 191, 255, 0.4)" stroke-width="2" />
+  <text x="50" y="66" font-family="'Space Grotesk', system-ui, -apple-system, sans-serif" font-size="44" font-weight="900" fill="url(#ss-grad)" text-anchor="middle" letter-spacing="-2" filter="url(#ss-glow)">SS</text>
+</svg>

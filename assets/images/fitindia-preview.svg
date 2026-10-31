@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="gym-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F14" />
+      <stop offset="50%" stop-color="#0D1B2D" />
+      <stop offset="100%" stop-color="#050B16" />
+    </linearGradient>
+    <linearGradient id="saffron-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9933" />
+      <stop offset="100%" stop-color="#FF7700" />
+    </linearGradient>
+    <linearGradient id="green-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="accent-blue-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BFFF" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+    <filter id="gym-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" rx="16" fill="url(#gym-bg-grad)" stroke="rgba(0, 191, 255, 0.25)" stroke-width="1.5" />
+
+  <!-- Ambient Glow Shapes -->
+  <circle cx="200" cy="140" r="130" fill="#FF9933" opacity="0.06" filter="url(#gym-glow)" />
+  <circle cx="620" cy="360" r="130" fill="#10B981" opacity="0.06" filter="url(#gym-glow)" />
+
+  <!-- Header Nav -->
+  <rect x="30" y="24" width="740" height="48" rx="10" fill="#0D1B2D" stroke="rgba(0, 191, 255, 0.15)" stroke-width="1" />
+  
+  <!-- Window Controls -->
+  <circle cx="56" cy="48" r="5" fill="#EF4444" opacity="0.8" />
+  <circle cx="72" cy="48" r="5" fill="#F59E0B" opacity="0.8" />
+  <circle cx="88" cy="48" r="5" fill="#10B981" opacity="0.8" />
+
+  <!-- Logo -->
+  <text x="110" y="53" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800" fill="#00BFFF">XY.FITNESS</text>
+  <text x="210" y="52" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">AI-Powered Personalized Fitness Platform</text>
+
+  <!-- Header Action Buttons -->
+  <rect x="610" y="34" width="72" height="28" rx="6" fill="rgba(255, 255, 255, 0.05)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+  <text x="646" y="52" font-family="'Inter', sans-serif" font-size="11" fill="#CBD5E1" text-anchor="middle">Sign In</text>
+
+  <rect x="690" y="34" width="68" height="28" rx="6" fill="url(#accent-blue-grad)" />
+  <text x="724" y="52" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Get Started</text>
+
+  <!-- Center Glass Card -->
+  <rect x="140" y="90" width="520" height="230" rx="14" fill="rgba(11, 15, 20, 0.85)" stroke="rgba(0, 191, 255, 0.2)" stroke-width="1.2" />
+
+  <!-- Flag Pill -->
+  <rect x="250" y="106" width="300" height="26" rx="13" fill="rgba(255, 153, 51, 0.1)" stroke="rgba(255, 153, 51, 0.3)" stroke-width="1" />
+  <text x="400" y="123" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFB066" text-anchor="middle">🇮🇳 Designed for Indian Fitness Enthusiasts</text>
+
+  <!-- Title Lines -->
+  <text x="400" y="160" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="800" fill="#F8FAFC" text-anchor="middle">Your Fitness.</text>
+  <text x="400" y="188" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="800" fill="url(#saffron-grad)" text-anchor="middle">Your Plan.</text>
+  <text x="400" y="216" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="800" fill="url(#green-grad)" text-anchor="middle">Your Journey.</text>
+
+  <text x="400" y="244" font-family="'Inter', sans-serif" font-size="11.5" fill="#94A3B8" text-anchor="middle">Personalized workout and Indian-friendly nutrition plans based on body metrics.</text>
+
+  <!-- CTA Buttons in Card -->
+  <rect x="260" y="265" width="160" height="34" rx="8" fill="url(#accent-blue-grad)" />
+  <text x="340" y="287" font-family="'Space Grotesk', sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Start Your Journey →</text>
+
+  <rect x="430" y="265" width="120" height="34" rx="8" fill="#1E293B" stroke="rgba(0, 191, 255, 0.25)" stroke-width="1" />
+  <text x="490" y="287" font-family="'Space Grotesk', sans-serif" font-size="11.5" font-weight="600" fill="#CBD5E1" text-anchor="middle">Member Login</text>
+
+  <!-- 4 Feature Pills Below Card -->
+  <g transform="translate(60, 335)">
+    <!-- Pill 1: Personalized Fitness -->
+    <rect width="160" height="120" rx="10" fill="#0D1B2D" stroke="rgba(0, 191, 255, 0.2)" stroke-width="1" />
+    <circle cx="28" cy="30" r="14" fill="rgba(0, 191, 255, 0.15)" />
+    <text x="24" y="35" font-size="14">📋</text>
+    <text x="50" y="34" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#F8FAFC">Personalized</text>
+    <text x="16" y="65" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">Dynamic routines adapted</text>
+    <text x="16" y="80" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">to your experience level</text>
+    <text x="16" y="95" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">and fitness goals.</text>
+
+    <!-- Pill 2: Smart BMI -->
+    <rect x="175" width="160" height="120" rx="10" fill="#0D1B2D" stroke="rgba(16, 185, 129, 0.2)" stroke-width="1" />
+    <circle cx="203" cy="30" r="14" fill="rgba(16, 185, 129, 0.15)" />
+    <text x="198" y="35" font-size="14">📈</text>
+    <text x="225" y="34" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#10B981">Smart BMI</text>
+    <text x="191" y="65" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">Recalculate body metrics</text>
+    <text x="191" y="80" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">and adapt progress</text>
+    <text x="191" y="95" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">recommendations.</text>
+
+    <!-- Pill 3: Home or Gym -->
+    <rect x="350" width="160" height="120" rx="10" fill="#0D1B2D" stroke="rgba(0, 191, 255, 0.2)" stroke-width="1" />
+    <circle cx="378" cy="30" r="14" fill="rgba(0, 191, 255, 0.15)" />
+    <text x="374" y="35" font-size="14">🏠</text>
+    <text x="400" y="34" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#F8FAFC">Home or Gym</text>
+    <text x="366" y="65" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">Train anywhere with zero</text>
+    <text x="366" y="80" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">equipment at home or</text>
+    <text x="366" y="95" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">full machines at gym.</text>
+
+    <!-- Pill 4: Indian Nutrition -->
+    <rect x="525" width="160" height="120" rx="10" fill="#0D1B2D" stroke="rgba(255, 153, 51, 0.2)" stroke-width="1" />
+    <circle cx="553" cy="30" r="14" fill="rgba(255, 153, 51, 0.15)" />
+    <text x="548" y="35" font-size="14">🥗</text>
+    <text x="575" y="34" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#FF9933">Indian Diet</text>
+    <text x="541" y="65" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">Balanced meals with</text>
+    <text x="541" y="80" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">paneer, dal, eggs, fish,</text>
+    <text x="541" y="95" font-family="'Inter', sans-serif" font-size="10.5" fill="#94A3B8">and chicken.</text>
+  </g>
+</svg>
