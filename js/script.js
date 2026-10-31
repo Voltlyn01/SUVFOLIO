@@ -442,6 +442,14 @@
         return;
       }
 
+      // Prepare payload before disabling fields (disabled inputs are omitted from FormData)
+      const payload = {
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        subject: subjectInput.value.trim(),
+        message: messageInput.value.trim()
+      };
+
       // Set Loading State
       isSubmitting = true;
       submitBtn.disabled = true;
@@ -454,14 +462,13 @@
       if (submitSpinner) submitSpinner.style.display = 'inline-block';
       if (submitIcon) submitIcon.style.display = 'none';
 
-      const formData = new FormData(form);
-
       try {
         const response = await fetch(FORMSPREE_ENDPOINT, {
           method: 'POST',
-          body: formData,
+          body: JSON.stringify(payload),
           headers: {
-            Accept: 'application/json'
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
           }
         });
 
